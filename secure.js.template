@@ -1,0 +1,61 @@
+'use strict';
+
+module.exports = {
+  db: {
+    database: 'blog',
+    host: 'localhost',
+    dialect: 'mysql',
+    port: 3306,
+    username: 'your mysql username',
+    password: 'your mysql password',
+    logging: false,
+    timezone: '+08:00',
+    define: {
+      charset: 'utf8mb4',
+      scopes: {
+        frontShow: {
+          where: {
+            public: 1,
+            status: 1
+          }
+        }
+      }
+    }
+  },
+  secret:
+    '\x88W\xf09\x91\x07\x98\x89\x87\x96\xa0A\xc68\xf9\xecJJU\x17\xc5V\xbe\x8b\xef\xd7\xd8\xd3\xe6\x95*4' // 发布生产环境前，请务必修改此默认秘钥
+};
+'use strict';
+
+module.exports = {
+  db: {
+    database: 'dashingdog_blog',
+    host: 'localhost',
+    dialect: 'mysql',
+    port: 3306,
+    username: 'root',
+    password: 'fa123321',
+    logging: false,
+    timezone: '+08:00',
+    define: {
+      charset: 'utf8mb4',
+      scopes: {
+        frontShow: {
+          where: {
+            public: 1,
+            status: 1
+          }
+        }
+      }
+    }
+  },
+  // 腾讯云cor配置
+  tencentCos: {
+    secretId: '',
+    secretKey: '',
+    bucket: '',
+    region: ''
+  },
+  secret:
+    '\x88W\xf09\x91\x07\x98\x89\x87\x96\xa0A\xc68\xf9\xecJJU\x17\xc5V\xbe\x8b\xef\xd7\xd8\xd3\xe6\x95*4' // 发布生产环境前，请务必修改此默认秘钥
+};

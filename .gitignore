@@ -15,3 +15,4 @@ dist
 learn
 tokens.json
 assets
+app/config/secure.js
