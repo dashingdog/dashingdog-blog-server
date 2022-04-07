@@ -1,6 +1,6 @@
 {
   "name": "dashingdog-blog-server",
-  "version": "0.3.11",
+  "version": "1.0.0",
   "description": "dashingdog-blog-server koa2",
   "main": "app/starter.js",
   "scripts": {
